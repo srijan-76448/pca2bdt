@@ -1,0 +1,175 @@
+<link rel="stylesheet" href="styles.css">
+
+<h1 id="mongodb-basic-operations">MongoDB Basic Operations</h1>
+<table>
+  <colgroup>
+    <col style="width: 50%" />
+    <col style="width: 50%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Command</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td><code>use &lt;database_name&gt;</code></td>
+      <td>Create Database/Switch to Database</td>
+    </tr>
+    <tr class="even">
+      <td><code>db.createCollection("&lt;collection_name&gt;")</code></td>
+      <td>Create Collection</td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <code>db.&lt;collection_name&gt;.insertOne(&lt;document&gt;)</code>
+      </td>
+      <td>Insert One Document</td>
+    </tr>
+    <tr class="even">
+      <td>
+        <code
+          >db.&lt;collection_name&gt;.insertMany([&lt;document1&gt;,
+          &lt;document2&gt;, ...])</code
+        >
+      </td>
+      <td>Insert Many Documents</td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <code
+          >db.&lt;collection_name&gt;.find(&lt;query&gt;,
+          &lt;projection&gt;)</code
+        >
+      </td>
+      <td>Find Documents</td>
+    </tr>
+    <tr class="even">
+      <td>
+        <code
+          >db.&lt;collection_name&gt;.updateOne(&lt;query&gt;, &lt;update&gt;,
+          &lt;options&gt;)</code
+        >
+      </td>
+      <td>Update One Document</td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <code
+          >db.&lt;collection_name&gt;.updateMany(&lt;query&gt;, &lt;update&gt;,
+          &lt;options&gt;)</code
+        >
+      </td>
+      <td>Update Many Documents</td>
+    </tr>
+    <tr class="even">
+      <td>
+        <code
+          >db.&lt;collection_name&gt;.deleteOne(&lt;query&gt;,
+          &lt;options&gt;)</code
+        >
+      </td>
+      <td>Delete One Document</td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <code
+          >db.&lt;collection_name&gt;.deleteMany(&lt;query&gt;,
+          &lt;options&gt;)</code
+        >
+      </td>
+      <td>Delete Many Documents</td>
+    </tr>
+    <tr class="even">
+      <td><code>db.&lt;collection_name&gt;.drop()</code></td>
+      <td>Drop Collection</td>
+    </tr>
+    <tr class="odd">
+      <td><code>db.dropDatabase()</code></td>
+      <td>Drop Database</td>
+    </tr>
+    <tr class="even">
+      <td><code>show collections</code></td>
+      <td>Show Collections</td>
+    </tr>
+    <tr class="odd">
+      <td><code>show dbs</code></td>
+      <td>Show Databases</td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="hadoop-file-management-commands">Hadoop File Management Commands</h1>
+<table>
+  <colgroup>
+    <col style="width: 50%" />
+    <col style="width: 50%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Command</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td><code>hadoop fs -mkdir &lt;paths&gt;</code></td>
+      <td>Create Directory</td>
+    </tr>
+    <tr class="even">
+      <td><code>hadoop fs -ls &lt;args&gt;</code></td>
+      <td>List Directory Contents</td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <code>hadoop fs -put &lt;localsrc&gt; &lt;HDFS_dest_Path&gt;</code>
+      </td>
+      <td>Upload File</td>
+    </tr>
+    <tr class="even">
+      <td><code>hadoop fs -get &lt;hdfs_src&gt; &lt;localdst&gt;</code></td>
+      <td>Download File</td>
+    </tr>
+    <tr class="odd">
+      <td><code>hadoop fs -cat &lt;path [filename]&gt;</code></td>
+      <td>See File Contents</td>
+    </tr>
+    <tr class="even">
+      <td><code>hadoop fs -cp &lt;source&gt; &lt;dest&gt;</code></td>
+      <td>Copy File</td>
+    </tr>
+    <tr class="odd">
+      <td><code>hadoop fs -copyFromLocal &lt;localsrc&gt; URI</code></td>
+      <td>Copy From Local to HDFS</td>
+    </tr>
+    <tr class="even">
+      <td>
+        <code
+          >hadoop fs -copyToLocal [-ignorecrc) (-crc] URI &lt;localdst&gt;</code
+        >
+      </td>
+      <td>Copy From HDFS to Local</td>
+    </tr>
+    <tr class="odd">
+      <td><code>hadoop fs -mv &lt;src&gt; &lt;dest&gt;</code></td>
+      <td>Move File</td>
+    </tr>
+    <tr class="even">
+      <td><code>hadoop fs -rm &lt;arg&gt;</code></td>
+      <td>Remove File/Directory</td>
+    </tr>
+    <tr class="odd">
+      <td><code>hadoop fs -rmr &lt;arg&gt;</code></td>
+      <td>Remove Directory Recursively</td>
+    </tr>
+    <tr class="even">
+      <td><code>hadoop fs -tail &lt;path [filename ]&gt;</code></td>
+      <td>Display Last Lines</td>
+    </tr>
+    <tr class="odd">
+      <td><code>hadoop fs -du &lt;path&gt;</code></td>
+      <td>Display File Length</td>
+    </tr>
+  </tbody>
+</table>
+
